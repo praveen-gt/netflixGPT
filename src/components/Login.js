@@ -23,8 +23,6 @@ const Login = () => {
   const handleformSubmit = (e) => {
     e.preventDefault();
 
-    // console.log(name.current.value, USER_AVATAR)
-    // return;
 
     //validate the formdata
     const errMessage = checkValidData(

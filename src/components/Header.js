@@ -38,8 +38,6 @@ const Header = () => {
     signOut(auth)
       .then(() => {
         console.log("User logout successful");
-        // navigate('/')
-
         // Sign-out successful.
       })
       .catch((error) => {
@@ -56,12 +54,12 @@ const Header = () => {
           <div className="text-center flex flex-col items-center">
           <img
             src={user.photoURL}
-            width={50}
-            height={50}
+            width={40}
+            height={40}
             alt=""
             className="rounded"
           />
-          <p className="font-medium mt-1">{user.displayName}</p>
+          <p className="font-medium mt-1 text-white">{user.displayName}</p>
           </div>
           <button
             onClick={handleSignOut}
