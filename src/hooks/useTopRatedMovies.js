@@ -14,7 +14,6 @@ export const useTopRatedMovies = () => {
       API_OPTIONS
     );
     const json = await data.json();
-    console.log('popular data' + json.results)
     dispatch(ADD_TOP_RATED_MOVIES(json.results));
   };
   useEffect(() => {

@@ -14,7 +14,6 @@ export const useTrendingVideo = () => {
       API_OPTIONS
     );
     const json = await data.json();
-    console.log('popular data' + json.results)
     dispatch(ADD_TRENDING_VIDEO(json.results));
   };
   useEffect(() => {
